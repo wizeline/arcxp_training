@@ -1,0 +1,16 @@
+{
+  "name": "arcxp_training",
+  "version": "1.0.0",
+  "description": "Playwright Project",
+  "main": "index.js",
+  "scripts": {
+    "test" : "playwright test --headed"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.41.2",
+    "@types/node": "^20.11.16"
+  }
+}
