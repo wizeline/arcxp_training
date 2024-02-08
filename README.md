@@ -1,6 +1,11 @@
 # arcxp_training
 Playwright Project POC
 
+## **Frontend Project**
+1. Initialize a new npm project and install all required dependencies.
+2. Navigate to [Todoist](https://todoist.com/) and create an account, get familiar with the site since we are using it for the whole challenge.
+3. Implement your code using Page Object Model.
+
 ## **Goals**
 - Implement a design pattern and structured folders for frontend automation.
   - Page Object Model.
