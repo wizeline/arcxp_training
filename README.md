@@ -1,2 +1,2 @@
 # arcxp_training
-Playwright Project
+Playwright Project POC
