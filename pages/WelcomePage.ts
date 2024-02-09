@@ -1,6 +1,6 @@
 import { Page, Locator} from 'playwright/test';
 
-class WellcomePage {
+class WelcomePage {
     readonly page: Page;
     readonly loginButton: Locator;
 
@@ -11,4 +11,4 @@ constructor(page: Page)
 }
 
 }
-export { WellcomePage };
+export { WelcomePage };

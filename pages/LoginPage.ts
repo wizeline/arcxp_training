@@ -1,5 +1,5 @@
 import { Page, Locator} from 'playwright/test';
-const { WellcomePage } = require('../pages/WellcomePage');
+const { WelcomePage } = require('../pages/WelcomePage');
 
 class LoginPage {
     page: Page;
@@ -9,14 +9,14 @@ class LoginPage {
 
     constructor(page){
         this.page = page;
-        this.user = page.getByPlaceholder('Enter your email...');
-        this.password = page.getByPlaceholder('Enter your password...');
+        this.user = page.locator('#element-0');
+        this.password = page.locator('#element-3');
         this.loginButton = page.getByRole('button', { name: 'Log in' });
     }
     
     async login(userName: string, password: string): Promise<void>{
-        const wellcomePage = new WellcomePage(this.page);
-        await wellcomePage.loginButton.click();
+        const welcomePage = new WelcomePage(this.page);
+        await welcomePage.loginButton.click();
         await this.user.fill(userName);
         await this.password.fill(password);
         await this.loginButton.click();

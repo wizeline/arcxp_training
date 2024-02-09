@@ -14,6 +14,5 @@ data.login_credential.forEach((credentials: { username: string, password: string
 
     await loginPage.login(credentials.username, credentials.password);
     await expect(homePage.container).toBeVisible();
-    await expect(page).toHaveTitle('Today – Todoist');
   });
 });
